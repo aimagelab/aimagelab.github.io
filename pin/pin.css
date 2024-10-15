@@ -1,0 +1,97 @@
+.post-it {
+    position: relative;
+    width: 800px;
+    height: 700px;
+    background-color: #f7f16b;
+    padding: 15px;
+    font-family: 'Kalam', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    /* transform: rotate(-3deg); Slight rotation for realistic look */
+    margin: 50px auto;
+  }
+
+  .post-it::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #f09228; /* Pin color */
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .post-it:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .post-it1 {
+    background-color: #b3ffb3; /* Light green */
+    height: 600px;
+}
+
+/* Post-it Variant 2 */
+.post-it2 {
+    background-color: #b3e6ff; /* Light blue */
+    height: 500px;
+}
+
+/* Post-it Variant 3 */
+.post-it3 {
+    background-color: #ffb3b3; /* Light red/pink */
+    height: 600px;
+}
+
+.post-it4 {
+  background-color: #d3b3ff; /* Light red/pink */
+  height: 550px;
+}
+
+.post-it5 {
+  background-color: #ccffb3; /* Light red/pink */
+}
+
+.image-caption-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.captions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.images img {
+  width: 90px;
+  height: 90px;
+}
+
+.captions p {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Space Mono', sans-serif;
+  color: #333;
+}

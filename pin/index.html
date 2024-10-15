@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Personalized Instance-based Navigation Toward User-Specific Objects in Realistic Environments">
+  <meta name="keywords" content="PIN, PInNED, Embodied, Navigation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personalized Instance-based Navigation Toward User-Specific Objects in Realistic Environments
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Kalam" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/css/bulma.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="../static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="../static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../static/css/index.css">
+  <link rel="stylesheet" href="./pin.css">
+  <link rel="icon" href="../static/images/pin_favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="../static/js/fontawesome.all.min.js"></script>
+  <script src="../static/js/bulma-carousel.min.js"></script>
+  <script src="../static/js/bulma-slider.min.js"></script>
+  <script src="../static/js/index.js"></script>
+</head>
+
+<body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop" >
+        <div class="columns is-centered">
+          <div class="column has-text-centered" style="font-family:'Kalam',sans-serif;">
+            <h1 class="title is-1 publication-title">
+            </h1>
+            <h1 class="title is-2 publication-title" style="font-family:'Kalam',sans-serif;">📌 Personalized Instance-based Navigation Toward User-Specific Objects in Realistic Environments</h1>
+            <h1 class="title is-4" style="color: #5c5c5c;">NeurIPS 2024 Datasets and Benchmarks</h1>
+            <div class="is-size-5 publication-authors" style="font-family:'Kalam',sans-serif;">
+              <span class="author-block">
+                <a href="https://lucabarsellotti.github.io/">Luca Barsellotti</a>*,</span>
+              <span class="author-block">
+                <a href="https://robertobigazzi.it/">Roberto Bigazzi</a>*,</span></br>
+              <span class="author-block">
+                <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=90">Marcella
+                  Cornia</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.lorenzobaraldi.com/">Lorenzo Baraldi</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=1">Rita
+                  Cucchiara</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors" style="font-family:'Kalam',sans-serif;">
+              <span class="author-block">University of Modena and Reggio Emilia</span>
+            </div>
+
+            <div class="is-size-5 publication-authors" style="font-family:'Kalam',sans-serif;">
+              <span class="author-block">* Equal contribution</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://lucabarsellotti.github.io/data/2024_NeurIPS_Personalized_Navigation_.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.06542" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/aimagelab/pin" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body" style="padding-bottom: 10px;">
+        <!-- <img src="static/images/into_the_wild.png" class="center"> -->
+      </div>
+    </div>
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="subtitle has-text-centered">
+          <!-- <strong>FreeDA</strong> is a training-free approach to perform open-vocabulary segmentation with free-form
+          textual queries -->
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
+      <table>
+        <tr>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/backpack.gif" alt="backpack" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/bag.gif" alt="bag" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/ball.gif" alt="ball" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/book.gif" alt="book" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/camera.gif" alt="camera" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/cellphone.gif" alt="cellphone" width="70" height="70"></td>
+        </tr>
+        <tr>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/eyeglasses.gif" alt="eyeglasses" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/hat.gif" alt="hat" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/headphones.gif" alt="headphones" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/keys.gif" alt="keys" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/laptop.gif" alt="laptop" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/mug.gif" alt="mug" width="70" height="70"></td>
+        </tr>
+        <tr>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/shoes.gif" alt="shoes" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/teddy_bear.gif" alt="teddy bear" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/toy.gif" alt="toy" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/visor.gif" alt="visor" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/wallet.gif" alt="wallet" width="70" height="70"></td>
+          <td style="text-align:center; padding: 10px;"><img src="static/images/watch.gif" alt="watch" width="70" height="70"></td>
+        </tr>
+      </table>
+      </div>
+</section>
+  
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered post-it">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In the last years, the research interest in visual navigation towards objects in indoor environments has grown significantly. This growth can be attributed to the recent availability of large
+              navigation datasets in photo-realistic simulated environments, like Gibson and Matterport3D. However, the navigation tasks supported by these datasets are often restricted to the objects present
+              in the environment at acquisition time. Also, they fail to account for the realistic scenario in which the target object is a user-specific instance that can be easily confused with similar
+              objects and may be found in multiple locations within the environment. To address these limitations, we propose a new task denominated <strong>Personalized Instance-based Navigation</strong> (PIN), in which an embodied agent
+              is tasked with locating and reaching a specific personal object by distinguishing it among multiple instances of the same category. The task is accompanied by <strong>PInNED</strong> 📌, a dedicated
+              new dataset composed of photo-realistic scenes augmented with additional 3D objects. In each episode, the target object is presented to the agent using two modalities: a set of visual reference
+              images on a neutral background and manually annotated textual descriptions. Through comprehensive evaluations and analyses, we showcase the challenges of the PIN task as well as the
+              performance and shortcomings of currently available methods designed for object-driven navigation, considering modular and end-to-end agents.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+      </br></br></br></br>
+    <!-- </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> -->
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered post-it post-it1">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Personalized Instance-based Navigation</h2>
+          <!-- <h2 class="title is-5">Diffusion-Augmented Prototype Generation</h2> -->
+          <div class="content has-text-centered">
+            <img src="static/images/task.png" class="center" width="750">
+            </br></br>
+            We present a novel task denominated <strong>Personalized Instance-based Navigation</strong> (PIN), in which an embodied agent is tasked with locating and reaching a personal object by distinguishing it among multiple distractors.
+            (<i>i.e.</i>, other objects of the same category as the target or of other categories). The target object, same category distractors, and other distractors are circled, respectively, in <span style="color:green">green</span>, <span style="color:orange">orange</span>, and <span style="color:red">red</span>.
+            The total number of available objects in the dataset is 338, corresponding to different instances of 18 object categories.
+          </div>
+        </div>
+      </div>
+      <!--/ Method. -->
+
+  </br></br></br></br>
+<!-- </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> -->
+        <!-- Method. -->
+        <div class="columns is-centered has-text-centered post-it post-it4">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">PInNED 📌 Dataset</h2>
+            <!-- <h2 class="title is-5">Diffusion-Augmented Prototype Generation</h2> -->
+            <div class="content has-text-centered">
+              <table>
+                <tr>
+                  <td style="text-align:center; padding: 10px;"><img src="static/images/scene1.png" alt="scene1" width="200" height="200"></td>
+                  <td style="text-align:center; padding: 10px;"><img src="static/images/scene2.png" alt="scene2" width="200" height="200"></td>
+                  <td style="text-align:center; padding: 10px;"><imgw src="static/images/scene3.png" alt="scene3" width="200" height="200"></td>
+                </tr>
+              </table>          
+              </br></br>
+              The task is accompanied by <strong>PInNED</strong> 📌, a dedicated new dataset composed of photo-realistic scenes augmented with additional 3D objects.
+              The objects are placed in the indoor scenes of <strong>Habitat-Matterport3D</strong> (HM3D) and, for each object, we selected a set of appropriate semantic surfaces as potential spawning positions.
+            </div>
+          </div>
+        </div>
+        <!--/ Method. -->
+
+    </br></br></br></br>
+    <!-- </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> -->
+          <!-- Method. -->
+          <div class="columns is-centered has-text-centered post-it post-it3">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Multimodal References</h2>
+              <!-- <h2 class="title is-5">Diffusion-Augmented Prototype Generation</h2> -->
+              <div class="content has-text-centered">
+                <div class="image-caption-container">
+                  <!-- Horizontal images -->
+                  <div class="images">
+                      <img src="static/images/backpack1.png" alt="backpack 1">
+                      <img src="static/images/backpack2.png" alt="backpack 2">
+                      <img src="static/images/backpack3.png" alt="backpack 3">
+                  </div>
+                  
+                  <!-- Vertical captions -->
+                  <div class="captions">
+                    <p>&emsp;a yellow kanken backpack with yellow straps on the top</p>
+                    <p>&emsp;a yellow monochrome kanken backpack</p>
+                    <p>&emsp;a photo of a yellow backpack with a strap and red circle on the front</p>
+                  </div>
+              </div>
+                </br></br>
+                  <div class="image-caption-container">
+                    <!-- Horizontal images -->
+                    <div class="images">
+                        <img src="static/images/eyeglasses1.png" alt="eyeglasses 1">
+                        <img src="static/images/eyeglasses2.png" alt="eyeglasses 2">
+                        <img src="static/images/eyeglasses3.png" alt="eyeglasses 3">
+                    </div>
+                    
+                    <!-- Vertical captions -->
+                    <div class="captions">
+                      <p>&emsp;a pair of black squared eyeglasses with a golden plate on the arms</p>
+                      <p>&emsp;a pair of sunglasses with a black frame and gold detail</p>
+                      <p>&emsp;a pair of black thick eyeglasses with squared frame and golden hinges</p>
+                    </div>
+                </div>
+  
+              </br></br>
+                We injected in the scenes <strong>18 categories</strong> of personal objects from the photo-realistic 3D models contained in the <strong>Objaverse-XL dataset</strong>.
+                The goal object is presented to the agent through a set of <strong>reference images</strong> showing the 3D model in an isolated setting or <strong>manually annotated textual descriptions</strong>.
+              </div>
+            </div>
+          </div>
+          <!--/ Method. -->
+
+        </br></br></br></br>
+        <!-- </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br> -->
+                <!-- Method. -->
+                <div class="columns is-centered has-text-centered post-it post-it2">
+                  <div class="column is-four-fifths">
+                    <h2 class="title is-3">Baselines</h2>
+                    <!-- <h2 class="title is-5">Diffusion-Augmented Prototype Generation</h2> -->
+                    <div class="content has-text-centered">
+                      <img src="static/images/baselines.png" class="center" width="750">
+                      </br></br>
+                      We grouped the evaluated agent baselines into two categories:</br>
+                      <strong>A. Modular</strong>: Decouple the navigation task into specialized sub-modules.</br>
+                      <strong>B. End-to-end</strong>: A monolithic policy is trained using reinforcement learning.
+                    </div>
+                  </div>
+                </div>
+                <!--/ Method. -->
+
+
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{barsellotti2024personalized
+        title={Personalized Instance-based Navigation Toward User-Specific Objects in Realistic Environments},
+        author={Barsellotti, Luca and Bigazzi, Roberto and Cornia, Marcella and Baraldi, Lorenzo and Cucchiara, Rita},
+        booktitle={Advances in Neural Information Processing Systems},
+        year={2024}
+      }</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-It Note Example</title>
+  <style>
+    .post-it {
+      position: relative;
+      width: 600px;
+      height: 200px;
+      background-color: #f7f16b;
+      padding: 15px;
+      font-family: 'Gloria Hallelujah', sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #333;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+      transform: rotate(-3deg); /* Slight rotation for realistic look */
+      margin: 50px auto;
+    }
+
+    .post-it::before {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: #f09228; /* Pin color */
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .post-it:after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="post-it">
+    Don't forget to submit the report by Friday!
+  </div>
+</body>
+</html>
