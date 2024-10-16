@@ -95,3 +95,45 @@
   font-family: 'Space Mono', sans-serif;
   color: #333;
 }
+
+@media (max-width: 768px) {
+  .post-it {
+      width: 90%;
+      height: auto;
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .post-it::before {
+      top: -10px;
+      width: 8px;
+      height: 8px;
+  }
+
+  .post-it:after {
+      top: -8px;
+      width: 16px;
+      height: 8px;
+  }
+
+  .post-it1, .post-it3 {
+      height: auto; /* Allow the height to adjust based on content */
+  }
+
+  .image-caption-container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      align-items: center;
+  }
+
+  .images img {
+      align-items: center;
+      width: 60px;
+      height: 60px;
+  }
+
+  .captions p {
+      font-size: 12px;
+  }
+}
